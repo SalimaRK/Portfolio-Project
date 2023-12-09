@@ -1,0 +1,453 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+    
+}
+
+.menu-bar {
+display: flex;
+justify-content: center;
+position: relative;
+}
+
+.header {
+display: block;
+width: 100%;
+margin-top: 5px
+
+}
+
+h1 {
+    font-weight: normal; 
+    letter-spacing: 5px;
+    font-size: 12px;
+    padding:0;
+    margin: 0;
+    color:gray;
+    display: flex;
+   
+}
+
+/* main */
+
+body{
+color: #333;
+font-size: 25px;
+padding: 5px;
+display: block;
+margin: 0px auto;
+width: 100%
+
+}
+
+.intro {
+    display: block
+    width: 100%
+    text-align: justify;
+    padding: 40px;
+    margin-top: 40px;
+    font-size: 25px;
+    line-height: 40px;
+   
+   
+
+}
+
+
+.btn {
+color: white;
+font-size: 20px;
+color: grey;
+position: absolute; 
+text-align:center;
+text-decoration: none;
+border: 1px solid gray;
+border-radius:10px;
+background-color: rgb(236, 196, 94);
+margin: 10px;
+padding: 2px;
+z-index: 1;
+}
+
+.btn:hover {
+border: 1px solid gray;
+background: white;
+transition: 1s;
+}
+
+.img {
+    display: border;
+    box-sizing: border-box;
+   margin: 70px 30px 20px;;
+   padding-top: 10px;
+   opacity: 0.8;
+   width: 80%
+   position: absolute;
+    
+}
+.centered {
+    width: 90%
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+
+/*--------- About me---------*/
+
+
+.about-me {
+    background-image: url('images1/pexels-tirachard-kumtanom-733852.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: block;
+    width: 100%
+    text-align: justify;
+    padding: 120px;
+    margin-top: 10px;
+    line-height: 35px;
+
+}
+   
+
+.about-me h1{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px;
+    padding: 30px;
+    /*background-color: transparent;*/
+    text-align: center;
+    border-radius: 8px;
+    
+}
+
+.about-me p {
+    border-radius: 10px;
+    font-weight: 1;
+    margin: 15px;
+    padding: 15px;
+    font-size: 18px;
+    text-align: justify;
+    color: grey;
+    
+}
+
+/*------Projects and Skills-------*/
+
+.project-background {
+display: border;
+float: right;
+margin-top: 35px;
+padding-bottom: 10px;
+margin-right: 20px;
+height: 90vh;
+
+}
+
+.projects {
+    font-size: 50px;
+    padding-top: auto;
+}
+
+.projects h1 {
+    font-size: 35px;
+    padding-top:10%;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.projects ul {
+    margin-top:2%;
+    margin-left: 5%;
+    line-height: 2;
+   
+}
+
+.projects ul li {
+    font-size: 16px;
+}
+
+.projects ul li a{
+    text-decoration: none;
+    color:grey;
+}
+
+.projects ul li ::after {
+    content: '';
+    width: 0%;
+    height:2px;
+    background: white;
+    display: block;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.projects ul li :hover:after{
+    width: 12%;
+}
+
+.skills h2 {
+    font-size: 35px;
+    color:grey;
+    padding-top:5%;
+    padding-bottom: 5%;
+    margin-left: 20px;
+}
+
+.skills-img {
+    margin-left: 20px;
+}
+
+
+/*------Get In Touch-----*/
+
+.contact {
+    display: block;
+    margin: 30px;
+    padding: 2px;
+    
+
+}
+.contact-img {
+display: border;
+position: contain;
+margin-top: 10px;
+margin-bottom: 10px;
+padding-top: 10px;
+
+}
+
+.contact-me {
+    display: border;
+    font-size: 30px;
+    margin: auto;
+    padding: 2px;
+}
+
+.email {
+    margin-bottom: 5%;
+    padding-top: 50px;
+    font-size: 16px;
+    color: grey;
+        
+}
+   
+.linkedin {
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: grey;
+   
+            
+ }
+
+ .linkedin a {
+    text-decoration: none;
+    color: grey;
+    font-size: 16px;
+}
+
+.linkedin a:hover{
+text-decoration: underline;
+color: black;
+}
+
+.mobile {
+
+margin-bottom: 2%;
+font-size: 16px;
+color: grey
+}
+
+footer {
+    font-size: 12px;
+    text-align: center
+}
+
+@media(max-width: 800px){
+
+    body {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .header {
+        display: none;
+    }
+
+ /* Introduction */   
+
+    .intro-link {
+        padding: 2%;
+        font-size: 20px;
+    
+    
+    }
+    .intro {
+        padding: 15%;
+        width: 100%;
+        text-align: justify;
+        margin-top: 3%;
+        display: flexbox;
+        line-height: 25px;
+        text-align:left;
+        width: 70%;
+    
+    }
+    .btn {
+        position: relative;
+        margin:20%;
+        font-size: 14px;
+    }
+    
+    
+    .img {
+        margin: 0;
+        padding: 10px;
+        max-width: 100%;
+        max-height: 350px;
+    }
+ 
+/* About Me */   
+
+    .about-me {
+
+        padding: 10px;
+        margin-top: 0px;
+        line-height: 355x;
+    
+    }
+       
+    
+    .about-me h1{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 105x;
+        padding: 10px;
+        /*background-color: transparent;*/
+        text-align:center;
+        border-radius: 6px;
+        
+    }
+    
+    .about-me p {
+        border-radius: 6px;
+        font-weight: 1;
+        margin: 10px;
+        padding: 15px;
+        font-size: 18px;
+        text-align: justify;
+        color: grey;
+        
+      
+    }
+
+/* Projects */
+
+.project-background {
+    display: border;
+    float: right;
+    margin-top: 20px;
+    margin-right: 2px;
+    height: 86vh;
+    
+    }
+    
+    .projects {
+        font-size: 20px;
+        padding-top: auto;
+    }
+    
+    .projects h1 {
+        font-size: 25px;
+        padding-top:10%;
+        margin-top: 30%;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    
+    .projects ul {
+        margin-top:5%;
+        margin-left: 8%;
+        line-height: 2;
+       
+    }
+    
+    .projects ul li {
+        font-size: 16px;
+    }
+    
+    .skills h2 {
+        display: block;
+        font-size: 25px;
+        color:grey;
+        padding-top: 10%;
+        margin-top: 10%;
+        margin-left: 20px;
+    }
+    
+    .skills-img {
+        margin-left: 50px;
+    }
+
+/* Contact Me */
+
+    .contact {
+        width: 20px;
+        padding: 10px;
+        font-size: 12px;
+        margin: 0;
+
+    }
+
+    .contact-me {
+       display: border;
+        font-size: 15px;
+        margin-left: 150px;
+        text-align: center;
+       
+    }
+
+    .contact-img {
+        display: border;
+        width: 100%;
+        height: 200px;
+        margin-top:0;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    .email {
+        margin-top: 40px;
+        margin-left: 10px;
+        padding-top: 20px;
+    }
+
+    .linkedin {
+        margin-top: 40px;
+        margin-left: 10px;
+        padding-top: 20px;
+    }
+
+    .mobile {
+        margin-top: 40px;
+        margin-left: 10px;
+        padding-top: 20px;
+    }
+
+ /* Footer */   
+
+    footer {
+        margin-top: 100px;
+        font-size: 15px;
+    }
+    }
+    

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+<div class="nav-links" >
+  <ul>
+    </i><li><a href="index.html">HOME</i></a></li>
+    <li><a href="about-me.html">ABOUT ME</a></li>
+    <li><a href="projects.html">PROJECTS</a></li>
+    <li ><a href="get-in-touch.html">CONTACT</a></li>
+  </ul>
+</div>
+</body>
+</html>
+<style>
+    /* Nav Bar */
+
+
+nav {
+    display: flex;
+    padding: o;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    position: sticky;
+}
+
+.nav-links ul {
+flex: 1;
+padding:0;
+margin: 0;
+
+}
+
+.nav-links li {
+list-style: none;
+display: inline-block;
+padding: 0 15px;
+
+
+}
+
+.nav-links a {
+display: block;
+color: grey;
+text-decoration: solid;
+font-size: 15px;
+position: relative;
+width: 100%;
+
+
+}
+
+.nav-links li ::after {
+    content: '';
+    width: 0%;
+    height:2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links li :hover:after{
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .nav-links ul li {
+    display: inline-block;
+    margin: 6px;
+    justify-content: space-evenly;
+    padding: 6px;
+ 
+ }
+ .nav-links {
+  display: flex;
+  text-align:center;
+ }
+ 
+ .nav-links ul li a{
+     font-size: 16px;
+   
+ }
+}
+
+</style>
+
+<script>
+    const li = document.querySelectorAll('.nav-links')[0]
+    li.addEventlistener('click', (e)=>{
+        e.preventDefault()
+        alert('Home Clicked')
+        window.location.href='./index.html'
+    })
+ 
+</script>
+
+
